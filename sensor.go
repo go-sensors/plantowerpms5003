@@ -16,8 +16,6 @@ import (
 	"golang.org/x/sync/errgroup"
 )
 
-//go:generate mockgen -source=../sensorio/serial.go -destination=./serial_mock_test.go -package=plantowerpms5003_test
-
 // Sensor represents a configured Plantower PMS5003 particulate matter sensor
 type Sensor struct {
 	concentrations   chan *pm.Concentration
